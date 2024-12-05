@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Organizer</h1>
+
+        <!-- Add Recipe Form -->
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+            <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+            <textarea id="instructions" placeholder="Instructions" required></textarea>
+            <select id="category">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+            <button type="submit">Add Recipe</button>
+        </form>
+
+        <!-- Search Bar -->
+        <input type="text" id="search-input" placeholder="Search Recipes by Name or Category">
+
+        <!-- Recipe List -->
+        <ul id="recipe-list">
+            <!-- Recipes will be dynamically inserted here -->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
